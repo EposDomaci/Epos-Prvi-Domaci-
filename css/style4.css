@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -56,20 +57,117 @@ h2 {
 
 .description {
     text-align: center;
-    line-height: 40px;
+    line-height: 70px;
     margin-bottom: 1cm;
+    background-color: rgba(199, 141, 33, 0.781);
+    color: white;
+    margin-top: 0;
+}
+
+.description h2 {
+    font-size: 26pt;
+    text-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.733),
+        1px -1px 0 rgba(0, 0, 0, 0.733),
+        -1px 1px 0 rgba(0, 0, 0, 0.733),
+        1px 1px 0 rgba(0, 0, 0, 0.733);
+    /* ovo je za outline kod naslova LET'S TALK */
+
+}
+
+.description p {
+    font-size: 17pt;
+
 }
 
 .customer_information {
-    margin-left: 10px;
+
     line-height: 40px;
+    margin-left: 5%;
+
 }
 
 .top_image img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3)), url("../slike-videi/6-hackney-wick-kit.jpg");
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+}
+
+.row {
+    display: flex;
+    padding: 3px;
+    justify-content: space-between;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0.5px solid rgb(224, 221, 221);
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    resize: vertical;
+
+}
+
+input[type=submit]:hover {
+    background-color: #417a43;
+}
+
+input[type=submit] {
+    background-color: #2ab62f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin-right: 3%;
+    margin-left: 5%;
+
+}
+
+.form {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.gender_selection {
+    width: 10%;
+    padding: 10px;
+    border: 0.5px solid rgb(224, 221, 221);
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    resize: vertical;
+    background-color: white;
+    margin-left: 5%;
+
+}
+
+input[type=reset] {
+    background-color: #d3b21e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 20px;
+
+}
+
+input[type=reset]:hover {
+    background-color: #664f1f;
+}
+
+#sex {
+    margin-left: 5%;
+    margin-bottom: 1.5%;
 }
