@@ -87,20 +87,33 @@ h2 {
 
 }
 
-.top_image img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.3)), url("../slike-videi/6-hackney-wick-kit.jpg");
-    width: 100%;
+.top_image {
+    background-image: url("../slike-videi/women-blonde-sportswear-stretching-sports-jogging-1145825-wallhere.com.jpg");
+    background-repeat: no-repeat;
     height: 80vh;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
 
+}
+
+#head {
+
+    font-size: 120px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 25vh 0 60px 0;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-style: italic;
 }
 
 .row {
     display: flex;
     padding: 3px;
     justify-content: space-between;
+    margin: 0 0;
 }
 
 input[type=text],
@@ -111,17 +124,18 @@ textarea {
     border: 0.5px solid rgb(224, 221, 221);
     border-radius: 2px;
     box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     resize: vertical;
+
 
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color: #417a43;
 }
 
-input[type=submit] {
+button[type=submit] {
     background-color: #2ab62f;
     color: white;
     border: none;
@@ -130,6 +144,7 @@ input[type=submit] {
     padding: 10px 20px;
     margin-right: 3%;
     margin-left: 5%;
+    margin-bottom: 5%;
 
 }
 
@@ -140,34 +155,75 @@ input[type=submit] {
 }
 
 .gender_selection {
-    width: 10%;
+    width: 100px;
     padding: 10px;
     border: 0.5px solid rgb(224, 221, 221);
     border-radius: 2px;
     box-sizing: border-box;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     resize: vertical;
     background-color: white;
     margin-left: 5%;
 
 }
 
-input[type=reset] {
+button[type=reset] {
     background-color: #d3b21e;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 20px;
+    margin-bottom: 5%;
 
 }
 
-input[type=reset]:hover {
+button[type=reset]:hover {
     background-color: #664f1f;
 }
 
 #sex {
     margin-left: 5%;
     margin-bottom: 1.5%;
+}
+
+#status {
+
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8 px;
+
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    animation: status 4s ease forwards;
+    color: white;
+    font-size: 20px;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }

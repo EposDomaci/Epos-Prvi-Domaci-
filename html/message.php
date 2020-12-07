@@ -24,7 +24,7 @@
     </div>
 
     <div class="top_image">
-        <p id="head"> We are here <br> for you!</p>
+
     </div>
 
     <div class="row">
@@ -52,22 +52,20 @@
         </p>
     </div>
     <div class="form">
-        <form id="message" action="https://formspree.io/f/xyybnzdo" method="POST">
+        <form id=registration_form action="message.php" method="post">
             <div class="customer_information">
                 <h3>Please fill the following form:</h3>
 
 
                 <label for="name">First Name *:</label>
-                <input type="text" name="name" size="40" maxlength="50" id="name" placeholder=" Your name.." required>
-                <br>
+                <input type="text" name="name" size="40" maxlength="50" id="name" placeholder=" Your name.."> <br>
                 <label for="email">Email *:</label>
-                <input type="text" name="email" size="40" maxlength="50" id="email" placeholder=" Your email.."
-                    required> <br>
+                <input type="text" name="email" size="40" maxlength="50" id="email" placeholder=" Your email.."> <br>
                 <label for="phone">Mobile Phone:</label>
                 <input type="text" name="phone" size="40" maxlength="50" id="phone" placeholder=" Your mobile phone..">
                 <br>
                 <div class="continent_selection">
-                    <label for="continent">I am buying from :</label>
+                    <label for="continent">I am buying from *:</label>
                     <select id="continent" name="continent">
                         <option value="australia">Australia</option>
                         <option value="north_america">North America</option>
@@ -78,10 +76,10 @@
                 </div>
                 <label for="message">Message *:</label>
                 <textarea name="Message" rows="6" cols="45" id="message" placeholder="Your message.."
-                    style="height:250px" required></textarea> <br>
+                    style="height:250px"></textarea> <br>
             </div>
             <br>
-            <p id="sex">Sex :</p>
+            <p id="sex">Sex *:</p>
             <div class="gender_selection">
 
                 <input type="radio" name="gender" value="male"> Male<br>
@@ -90,17 +88,12 @@
             </div>
             <br>
             <div class="submit_reset">
-                <button type="submit" id="sub">Submit</button>
-                <button type="reset" id="res">Clear Form</button>
+                <input type="submit" value="Send the message">
+                <input type="reset" value="Clear this form">
             </div>
-            <div id="status"></div>
         </form>
     </div>
-    <div id="status"></div>
 
-    <!-- Ovo je za required -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
 
 
 </body>
