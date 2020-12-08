@@ -182,24 +182,28 @@ a {
 .trendingNow {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
+.trendingNow div {
+    width: 30%;
+}
+
 .trendingNow .picture1 {
-    flex: 1;
+    /* flex: 1; */
     padding-left: 50px;
 }
 
 .trendingNow .picture2 {
-    flex: 1;
+    /* flex: 1; */
     padding-left: 50px;
 }
 
 .trendingNow .picture3 {
-    flex: 1;
+    /* flex: 1; */
     padding-left: 50px;
 }
 
