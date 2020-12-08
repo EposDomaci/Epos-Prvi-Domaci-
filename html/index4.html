@@ -5,23 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact| SportLine™ </title>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="../css/style4.css">
 
 </head>
 
 <body>
     <script src="../js/script4.js"></script>
-    <div class="navbar">
-        <a href="#" class="logo"><img src="../slike-videi/LOGO2.png" alt=""></a>
-        <ul class="nav">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#about">About</a></li>
-            <li> <a href="#ourCollection">Our collection</a> </li>
-            <li> <a href="#contact">Contact Us</a></li>
-            <li> <a href="#faq">FAQ</a></li>
-        </ul>
+    <div class="aboveBar">
+        <p>Free shipping on orders over 150$</p>
     </div>
+    <nav class="navbar">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </a>
+        <ul class="main-menu">
+            <li><a href="indexNaslovna.html">Home</a></li>
+            <li><a href="#futer">About</a></li>
+            <li><a href="ourCollection.html">Our Collection</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="index3.html" target="_blank">FAQ</a></li>
+        </ul>
+        <a href="#" class="navLogo"><img src="../slike-videi/LOGO3.png" alt=""></a>
+
+        <ul class="navbar-icons">
+            <li><i class="fas fa-search"></i></li>
+            <li><i class="fas fa-user"></i></li>
+            <li><i class="fas fa-shopping-bag"></i></li>
+        </ul>
+    </nav>
 
     <div class="top_image">
         <p id="head"> We are here <br> for you!</p>
@@ -96,15 +112,74 @@
             <div id="status"></div>
         </form>
     </div>
-    <div id="status"></div>
-
-    <!-- Ovo je za required -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
 
 
+
+    <div class="footer" id="futer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Sport<span>Line</span></h1>
+                <p>
+                    Our mission is what drives us to do everything
+                    possible to expand human potential. We do that
+                    by creating groundbreaking sport innovations,
+                    by making our products more sustainably, by
+                    building a creative and diverse global team
+                    and by making a positive
+                    impact in communities where we live and work.
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i>&nbsp; 381-315-389</span>
+                    <span><i class="fas fa-envelope"></i>&nbsp; info@sportline.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <a href="#">
+                        <li>Events</li>
+                    </a>
+                    <a href="#">
+                        <li>Team</li>
+                    </a>
+                    <a href="#">
+                        <li>Mentores</li>
+                    </a>
+                    <a href="#">
+                        <li>Gallery</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms and Coditions</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact us</h2>
+                <br>
+                <form action="indexNaslovna.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input"
+                        placeholder="Your email adress...">
+                    <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                    <button type="submit" class="btn btn-big">
+                        <i class="fas fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; SportLine.com | Designed by Marko and Danilo
+        </div>
+    </div>
+    <script src="../js/naslovna.js">
+
+    </script>
 </body>
-
-
 
 </html>

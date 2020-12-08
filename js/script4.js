@@ -1,32 +1,13 @@
-// $(function() {
-// var $messageForm =$("message");
-// if($messageForm.length){
-//     $$messageForm.validate({
-//         rules:{
-//             name:{
-//                 required:true
 
-//                }
-//           },
-//           messages:{
-//               name:{
-//                   required: 'Enter your name!'
-//               }
-//           }
-
-//         })
-//     }
-// });
 
 window.addEventListener("DOMContentLoaded", function() {
 
-    // get the form elements defined in your form HTML above
+    //Uzimam elemente iz forme i cuvam u promenljivu
     
     var form = document.getElementById("message");
-    // var button = document.getElementById("my-form-button");
     var status = document.getElementById("status");
 
-    // Success and Error functions for after the form is submitted
+    // Success i Error funkcije kada se pusti forma
     
     function success() {
       form.reset();
@@ -38,13 +19,14 @@ window.addEventListener("DOMContentLoaded", function() {
       status.classList.add('error');
       status.innerHTML = "Enter a vaild e-mail adress.";
     }
+
     // refresh form kada se klikne submit
     function submitForm() {
         document.contact-form.submit();
         document.contact-form.reset();
         }
 
-    // handle the form submission event
+    // Ovo je main Evenet Listener koji rukovodi formom kada je kliknut Submit
 
     form.addEventListener("submit", function(ev) {
       ev.preventDefault();
