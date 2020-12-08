@@ -3,7 +3,6 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
 }
 
 html {
@@ -12,10 +11,10 @@ html {
     box-sizing: border-box;
 }
 
+#head {
+    text-align: center;
+}
 
-
-
-/* section used for centering process */
 section {
     display: flex;
     flex-direction: column;
@@ -34,6 +33,11 @@ section h1 {
     font-size: 40px;
     margin-bottom: 5%;
     color: white;
+    text-shadow: 2px 2px black;
+}
+
+section p {
+    text-shadow: 2px 2px black;
 }
 
 #undertitle {
@@ -87,17 +91,17 @@ section h1 {
     overflow: hidden;
     position: relative;
     background-color: #212838;
-    transition: max-height 650ms;
+    transition: max-height 950ms;
 
 }
 
 .answer::before {
     content: "";
     position: absolute;
-    width: .6rem;
+    width: .7rem;
     height: 90%;
     background-color: #8fc460;
-    top: 50%;
+    top: 5%;
     left: 0;
     transform: translate(-50%);
 
@@ -110,14 +114,17 @@ section h1 {
     padding: 2rem;
 }
 
+/* ovo je za click event */
 .accordion-item:target .answer {
     max-height: 20rem;
 }
 
+/* kada kliknem na accordion-item : nestaje + */
 .accordion-item:target .accordion-link .ion-md-add {
     display: none;
 }
 
+/* kada kliknem na accordion-item : pojavljuje se - */
 .accordion-item:target .accordion-link .ion-md-remove {
     display: block;
 }
